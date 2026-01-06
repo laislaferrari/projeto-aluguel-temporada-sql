@@ -1,0 +1,35 @@
+-- Inserção de hóspedes;
+insert into Hospedes (nome, nascimento, email, telefone) 
+values ('Mariana', '2001-04-25', 'mariana@email.com', '2498856741');
+
+insert into Hospedes (nome, nascimento, email, telefone) 
+values ('Júlio', '1998-04-01', 'julio@email.com', '249887451');
+
+insert into Hospedes (nome, nascimento, email, telefone) 
+values ('Karla', '1962-11-01', 'karla@email.com', '249883771');
+
+-- Inserção de endereços pq a fk tá como not null;
+insert into Enderecos (cep, rua, numero, bairro, cidade, estado)
+values ('25600-001', 'Rua das Palmeiras', 10, 'Centro', 'Petrópolis', 'RJ');
+
+insert into Enderecos (cep, rua, numero, bairro, cidade, estado)
+values ('25600-002', 'Av. Central', 200, 'Centro', 'Petrópolis', 'RJ');
+
+insert into Enderecos (cep, rua, numero, bairro, cidade, estado)
+values ('25600-003', 'Estrada da Serra', 55, 'Quitandinha', 'Petrópolis', 'RJ');
+
+insert into Enderecos (cep, rua, numero, bairro, cidade, estado)
+values ('25600-004', 'Rua Moderna', 12, 'Bingen', 'Petrópolis', 'RJ');
+
+-- Inserção de propriedades;
+insert into Propriedades (nome_imovel, capacidade_hospedes, fk_endereco, preco_noite) 
+values ('Casa de Praia', 12, 1, 350.00);
+
+insert into Propriedades (nome_imovel, capacidade_hospedes, fk_endereco, preco_noite) 
+values ('Apartamento Central', 4, 2, 200.00);
+
+insert into Propriedades (nome_imovel, capacidade_hospedes, fk_endereco, preco_noite) 
+values ('Choupana na Serra', 8, 3, 280.00);
+
+insert into Propriedades (nome_imovel, capacidade_hospedes, fk_endereco, preco_noite) 
+values ('Studio Moderno', 2, 4, 150.00);

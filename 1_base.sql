@@ -1,4 +1,4 @@
-drop table Hospedes cascade;
+drop table Hospedes cascade;	
 drop table Enderecos cascade;
 drop table Propriedades cascade;
 
@@ -27,6 +27,19 @@ create table Hospedes (
 	fk_endereco int references Enderecos(id_endereco)
 );
 	
+
+alter table Propriedades add column preco_noite numeric (10,2);
+
+
+alter table Propriedades
+alter column preco_noite set not null;
+
+alter table Propriedades
+add constraint preco_noite
+check (preco_noite > 0);
+
+
+ 
 	
 	
 	
