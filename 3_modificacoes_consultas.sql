@@ -10,4 +10,4 @@ where id_hospede = 2;
 
 
 select * from hospedes;
-
+select * from propriedades p ;
